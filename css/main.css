@@ -175,11 +175,6 @@ body {
 .back {
     margin: 20px 0;
 }
-
-.all_card {
-    max-height: 150px;
- }
-
 .header_link, .partner_link, .back a {
     background-color: #029DE0;
     padding: 10px 15px;
