@@ -17,18 +17,18 @@ body {
 
   /* ================ navigation styling ====================== */
   .navbar {
+    position: fixed;
+    top: 0;
       padding-bottom: 10px;
       font-size: .9rem;
       position: relative;
       z-index: 150;
   }
 
-  /* for fixed navigation style - don't turn on yet */
-  /* .main-nav-scrolled {
+ .main-nav-scrolled {
     position: fixed;
-    width: 100%;
     top: 0;
-  } */
+  } 
 
   .form_one {
     text-align: center;

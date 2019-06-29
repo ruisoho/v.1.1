@@ -8,12 +8,25 @@
     <!-- Main CSS -->
     <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
 
+    <!-- Preload youtube video -->
+    <link rel="preload" href="https://www.youtube.com/embed/5GcQtLDGXy8" as="document">
+
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <title>Undercode</title>
 
-<!-- Font awesome -->
-<script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-142588448-1');
+    </script>
 
 </head>
 <body>
@@ -56,8 +69,9 @@
 		</div>
 		<div class="wrapper">
 			<div class="content-video">
-				<embed class="video" id="video" src="" wmode="transparent" type="application/x-shockwave-flash" allowfullscreen="true" title="Video Player">
-				</embed>
+          <iframe width="660" height="415" src="https://www.youtube.com/embed/5GcQtLDGXy8" 
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
 			</div>
       <br />
       <p class="back"><a href="../resources.html">Go back</a></p>
@@ -94,26 +108,7 @@
 
   <script type="text/javascript" src="../js/app.js"></script>
 
-
-
   <!-- ===== nav script end ===== -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery-2.1.1.js"></script>
-
-  <script src="js/jquery.mixitup.min.js"></script>
-
-  <script src="js/main.js"></script>
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript">
-    $(window).load(function () {
-        $("#video")[0].src = "https://www.youtube.com/v/5GcQtLDGXy8";
-    });
-</script>
-
-  <!-- Resource jQuery -->
 
   </body>
 

@@ -12,30 +12,21 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <title>Undercode</title>
 
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+    <!-- Preload youtube video -->
+    <link rel="preload" href="https://www.youtube.com/embed/yfoY53QXEnI" as="document">
 
-    <!-- MailerLite Universal -->
-<script>
-    (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
-    var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
-    f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
-    var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
-    _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
 
-    var ml_account = ml('accounts', '1546862', 't7a5k6i2b7', 'load');
-    </script>
-    <!-- End MailerLite Universal -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-142588448-1');
-    </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-142588448-1');
+        </script>
 
 </head>
 <body>
@@ -79,7 +70,9 @@
 
 		<div class="wrapper">
 			<div class="content-video">
-				<embed class="video" id="video" src="" wmode="transparent" type="application/x-shockwave-flash" allowfullscreen="true" title="Video Player"></embed>
+          <iframe width="660" height="415" src="https://www.youtube.com/embed/yfoY53QXEnI" 
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
 			</div>
       <br />
       <p class="back"><a href="../resources.html">Go back</a></p>
