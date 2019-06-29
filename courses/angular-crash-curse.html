@@ -11,7 +11,19 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <title>Undercode</title>
-
+    <script type="text/javascript">
+      // generate different youtube embed code for iOS Devices
+      function youTubeEmbed(youtubeID, width, height, autoPlay){
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+          // This is an iOS device, hide the added params or Youtube might choke
+          var embedCode = '<iframe width="'+width+'" height="'+height+'" src="http://www.youtube.com/embed/' + youtubeID + '" frameborder="0" allowfullscreen></iframe>';
+        } else {
+          // Regular userAgent, params are probable OK.
+          var embedCode = '<iframe width="'+width+'" height="'+height+'" src="http://www.youtube.com/embed/' + youtubeID + '?rel=0&controls=1&modestbranding=1&autohide=1autoplay='+autoPlay+'" frameborder="0"></iframe>';
+        }
+        return document.write(embedCode);
+      }
+      </script>
 
 </head>
 <body>
@@ -54,12 +66,14 @@
 		</div>
 		 <div class="wrapper">
 			<div class="content-video">
-				<div id="plaver"></div>
-					
-					<object style="width:100%;height:100%;width: 820px; height: 461.25px; float: none; clear: both; margin: 2px auto;" 
-					data="https://www.youtube.com/v/FlUCU13dJyo&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v">
-					</object>
-				
+
+        <p id="video">
+          <script type="text/javascript">
+            // Call function with Youtube ID, Width, Height and Autoplay
+            youTubeEmbed("FlUCU13dJyo", 720, 520, 1);
+          </script>
+        </p>
+			
 				<br />
       </div>
       <p class="back"><a href="../resources.html">Go back</a></p>
