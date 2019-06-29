@@ -8,12 +8,21 @@
     <!-- Main CSS -->
     <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
 
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <title>Undercode</title>
+    <!-- Preload youtube video -->
+    <link rel="preload" href="https://www.youtube.com/embed/Y1BlT4_c_SU" as="document">
 
-<!-- Font awesome -->
-<script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+ 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-142588448-1');
+    </script>
 
 </head>
 <body>
@@ -56,8 +65,10 @@
 				</div>
 				<div class="wrapper">
                 <div class="content-video">
-						<embed class="video" id="video" src="" wmode="transparent" type="application/x-shockwave-flash" allowfullscreen="true" title="Video Player"></embed>
-            <br />
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y1BlT4_c_SU" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                  </iframe>
+                  <br />
             <p class="back"><a href="../resources.html">Go back</a></p>
 						<p>Powered by: <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">Traversy Media</a></p>
 						<br /><br />
