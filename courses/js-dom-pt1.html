@@ -7,27 +7,24 @@
     <link rel="icon" type="image/png" href="../img/logo.png">
     <!-- Main CSS -->
     <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
-
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <title>Undercode</title>
+    
+ <!-- Preload youtube video -->
+ <link rel="preload" href="https://www.youtube.com/embed/I9XRrlOOazo" as="document">
 
  <!-- Font awesome -->
  <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
 
- <script type="text/javascript">
-  // generate different youtube embed code for iOS Devices
-  function youTubeEmbed(youtubeID, width, height, autoPlay){
-    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-      // This is an iOS device, hide the added params or Youtube might choke
-      var embedCode = '<iframe width="'+width+'" height="'+height+'" src="http://www.youtube.com/embed/' + youtubeID + '" frameborder="0" allowfullscreen></iframe>';
-    } else {
-      // Regular userAgent, params are probable OK.
-      var embedCode = '<iframe width="'+width+'" height="'+height+'" src="http://www.youtube.com/embed/' + youtubeID + '?rel=0&controls=1&modestbranding=1&autohide=1autoplay='+autoPlay+'" frameborder="0"></iframe>';
-    }
-    return document.write(embedCode);
-  }
-  </script>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+ <script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-142588448-1');
+ </script>
+
+  <title>Undercode</title>
 
 </head>
 <body>
