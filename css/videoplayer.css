@@ -20,7 +20,7 @@
 
 		/*  VIDEOS PLAYLIST 
  		############################### */
-		.vid-list-container {
+		 .vid-list-container {
 			width: 90%;
 			overflow: hidden;
 			margin-top: 20px;
@@ -43,6 +43,7 @@
 			margin: 0;
 			padding: 10px;
 		}
+		
 
 		.thumb {
 			/*position: relative;*/
@@ -57,7 +58,7 @@
 		}
 
 		.vid-item .desc {
-			color: #21A1D2;
+			color: #029DE0;
 			font-size: 15px;
 			margin-top:5px;
 		}
@@ -75,7 +76,7 @@
 		.arrow-left {
 			color: #fff;
 			position: absolute;
-			background: #777;
+			background: #029DE0;
 			padding: 15px;
 			left: -25px;
 			top: -130px;
@@ -86,7 +87,7 @@
 		.arrow-right {
 			color: #fff;
 			position: absolute;
-			background: #777;
+			background: #029DE0;
 			padding: 15px;
 			right: -25px;
 			top: -130px;

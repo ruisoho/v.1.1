@@ -3,27 +3,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Website ICON -->
+    <title>Undercode</title>
     <link rel="icon" type="image/png" href="../img/logo.png">
+    
     <!-- Main CSS -->
+
+  	<link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
+    <link rel = "stylesheet" type = "text/css" href="../css/videoplayer.css" />
 
-    <!-- Preload youtube video -->
-    <link rel="preload" href="https://www.youtube.com/embed/FlUCU13dJyo" as="document">
+    <!-- Scripts-->
 
-    <!-- Font awesome -->
+    <script src="http://www.google-analytics.com/ga.js" type="text/javascript" async=""></script>
+
     <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
- 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-142588448-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142588448-1');
     </script>
-<title>Undercode</title>
 
 </head>
 <body>
@@ -58,24 +63,164 @@
         <div class="wrapper center_two">
       <h1>Course</h1>
       <hr>
-                    <h1 class="course-title">Introduction to AngularJS</h1>
-                    <p class="course-description">In this AngularJS tutorial, how we can use this approach with our AngularJS apps.</p>
-                    <br />
-                    <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
-                    <button class="course-download">Download</button> -->
+                <h1 class="course-title">AngularJS Tutorial!</h1>
+                <p class="course-description"> AngularJS tutorial series for beginners!</p>
+                <br />
+                <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
+                <button class="course-download">Download</button> -->
 		</div>
 		<div class="wrapper">
-        	<div class="content-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" 
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-        <br />
-        <p class="back"><a href="../resources.html">Go back</a></p>
-				<p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br /><br />
-			</div>
+        <div class="container">
+
+            <!-- THE YOUTUBE PLAYER -->
+            <div class="vid-container">
+              <iframe width="560" height="315" id="vid_frame" src="https://www.youtube.com/embed/FlUCU13dJyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      
+           THE PLAYLIST 
+          <div class="vid-list-container">
+              <div class="vid-list">
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FlUCU13dJyo'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/FlUCU13dJyo/0.jpg"></div>
+                    <div class="desc">HTML Introduction</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CQE1cBsJ_Gk'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/CQE1cBsJ_Gk/0.jpg"></div>
+                    <div class="desc">MVC Architecture</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FlbtIHcGnPE'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/FlbtIHcGnPE/0.jpg"></div>
+                    <div class="desc">Downloading AngularJS</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/GLdRo9CQVHA'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/GLdRo9CQVHA/0.jpg"></div>
+                    <div class="desc">2-Way Data Binding</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Wm1Zj_VLbpk'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/Wm1Zj_VLbpk/0.jpg"></div>
+                    <div class="desc">Introduction to Directives</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xB-OkaRilZo'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/xB-OkaRilZo/0.jpg"></div>
+                    <div class="desc">Expressions</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/oRGRpjU_duw'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/oRGRpjU_duw/0.jpg"></div>
+                    <div class="desc">ng-repeat directive</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ybnw5JwBk8g'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/ybnw5JwBk8g/0.jpg"></div>
+                    <div class="desc">Modules</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/QAUjWaQrY4A'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/QAUjWaQrY4A/0.jpg"></div>
+                    <div class="desc">Controllers</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/OCbJ12rJwnE'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/OCbJ12rJwnE/0.jpg"></div>
+                    <div class="desc">Filters</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/S-uYRHtXxgk'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/S-uYRHtXxgk/0.jpg"></div>
+                    <div class="desc">ng-include directive</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/kSSQYgQ6aEY'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/kSSQYgQ6aEY/0.jpg"></div>
+                    <div class="desc">ng-show directive</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/e6YjzckfQpg'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/e6YjzckfQpg/0.jpg"></div>
+                    <div class="desc">ng-click directive</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/OL8JIQEPSt0'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/OL8JIQEPSt0/0.jpg"></div>
+                    <div class="desc"> ng-submit directive</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/HR2MuTRuoIE'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/HR2MuTRuoIE/0.jpg"></div>
+                    <div class="desc">ng-src directive</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/y7FojM9BTdE'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/y7FojM9BTdE/0.jpg"></div>
+                    <div class="desc">Views and Routes</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/5SXog1helAY'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/5SXog1helAY/0.jpg"></div>
+                    <div class="desc">SON and $http</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/R_okHflzgm0'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/R_okHflzgm0/0.jpg"></div>
+                    <div class="desc">Custom Directives</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/SmFjEyd1iNU'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/SmFjEyd1iNU/0.jpg"></div>
+                    <div class="desc">Transclude & Replace</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/r5g5foLA0UI'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/r5g5foLA0UI/0.jpg"></div>
+                    <div class="desc">Animations (part 1)</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/iWS7z7ur8Ls'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/iWS7z7ur8Ls/0.jpg"></div>
+                    <div class="desc">Animations (part 2)</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/GkjaFQAhM7o'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/GkjaFQAhM7o/0.jpg"></div>
+                    <div class="desc">Form Validation (part 1)</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jHhtaJAdYv8'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/jHhtaJAdYv8/0.jpg"></div>
+                    <div class="desc">23 - Form Validation (part 2)</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/NUBooHYKOeY'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/NUBooHYKOeY/0.jpg"></div>
+                    <div class="desc">Location Service</div>
+                  </div>
+
+                  <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XiVtu58xVJY'">
+                    <div class="thumb"><img src="http://img.youtube.com/vi/XiVtu58xVJY/0.jpg"></div>
+                    <div class="desc">Pretty URL's</div>
+                  </div>
+
+               </div>
+              </div>
+      
+              LEFT AND RIGHT ARROWS 
+              <div class="arrows">
+                  <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                  <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                </div>
+                
+            <br />
+            <p class="back"><a href="../resources.html">Go back</a></p>
+						<p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg " target="_blank">The Net Ninja</a></p><br /><br />
+            </div>
         </div>
       </section>
-
 	  <section>
 		<footer>
 		  <div class="wrapper">
@@ -98,14 +243,28 @@
 			  </ul>
 		  </div>
 		</footer>
-	</section>
 
-	  <!-- ===== nav script ===== -->
-
-  <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
 
   <!-- ===== nav script end ===== -->
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.jsscript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".arrow-right").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "+=117"
+          }, 750);
+      });
+      $(".arrow-left").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "-=117"
+          }, 750);
+      });
+  });
+  </script>
+  
   </body>
 
   </html>

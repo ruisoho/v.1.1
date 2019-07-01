@@ -3,28 +3,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Website ICON -->
-    <link rel="icon" type="image/png" href="../img/logo.png">
-    <!-- Main CSS -->
-    <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
-
-    <!-- Preload youtube video -->
-   <link rel="preload" href="https://www.youtube.com/embed/I9XRrlOOazo" as="document">
-
-   <!-- Font awesome -->
-   <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
-
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
-   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
- 
-   gtag('config', 'UA-142588448-1');
-   </script>
-
     <title>Undercode</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    
+    <!-- Main CSS -->
+
+  	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
+    <link rel = "stylesheet" type = "text/css" href="../css/videoplayer.css" />
+
+    <!-- Scripts-->
+
+    <script src="http://www.google-analytics.com/ga.js" type="text/javascript" async=""></script>
+
+    <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142588448-1');
+    </script>
 
 </head>
 <body>
@@ -57,31 +61,262 @@
 
   <section> <!-- NEED JS SCRIPT TO CHANGE THE DOM!-->
         <div class="wrapper center_two">
-            <h1>Course</h1>
-            <hr>
-                    <h1 class="course-title">Introduction to VUEJS</h1>
-                    <p class="course-description">I'll introduce you to VueJS and how to get started by using a CDN to install it locally.</p>
-                    <br />
-                    <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
-                    <button class="course-download">Download</button> -->
-				</div>
-				<div class="wrapper">
-                <div class="content-video">
-					      	<iframe width="560" height="315" src="https://www.youtube.com/embed/yZ0f1Apb5CU" frameborder="0" 
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                  </iframe>
+      <h1>Course</h1>
+      <hr>
+      <h1 class="course-title">Introduction to VUEJS</h1>
+      <p class="course-description">I'll introduce you to VueJS and how to get started by using a CDN to install it locally.</p>
+                <br />
+                <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
+                <button class="course-download">Download</button> -->
+		</div>
+		<div class="wrapper">
+        <div class="container">
+
+            <!-- THE YOUTUBE PLAYER -->
+            <div class="vid-container">
+              <iframe width="560" height="315" id="vid_frame" src="https://www.youtube.com/embed/5LYrN_cAJoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      
+          <!-- THE PLAYLIST -->
+          <div class="vid-list-container">
+              <div class="vid-list">
+
+                    <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/5LYrN_cAJoA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/5LYrN_cAJoA/0.jpg"></div>
+                      <div class="desc">Introduction</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/3ROjxrSa5pk'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/3ROjxrSa5pk/0.jpg"></div>
+                      <div class="desc">The Vue Instance</div>
+                    </div>
+                  
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/2MAoq2-2nnE'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/2MAoq2-2nnE/0.jpg"></div>
+                      <div class="desc">Data & Methods</div>
+                    </div>
+     
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xIOwFTCBBDg'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/xIOwFTCBBDg/0.jpg"></div>
+                      <div class="desc">Data Binding</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/DCwOPBxsXDs'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/DCwOPBxsXDs/0.jpg"></div>
+                      <div class="desc">Events</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/VqKjr4I4Fdo'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/VqKjr4I4Fdo/0.jpg"></div>
+                      <div class="desc">Event Modifiers</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Ni6qd0uRoKY'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Ni6qd0uRoKY/0.jpg"></div>
+                      <div class="desc">Keyboard Events</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FgvjjYBP2A0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/FgvjjYBP2A0/0.jpg"></div>
+                      <div class="desc">Two-Way Data Binding</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/O14qJr5sKXo'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/O14qJr5sKXo/0.jpg"></div>
+                      <div class="desc">Computed Properties</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/4Gh5YcvGDjI'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/4Gh5YcvGDjI/0.jpg"></div>
+                      <div class="desc">Dynamic CSS Classes</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/0EJqZLcwVLY'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/0EJqZLcwVLY/0.jpg"></div>
+                      <div class="desc">Conditionals</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9Hcswbo0nCY'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/9Hcswbo0nCY/0.jpg"></div>
+                      <div class="desc">Looping with v-for</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/WjfpQlVem-8'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/WjfpQlVem-8/0.jpg"></div>
+                      <div class="desc">Simple Punchbag Game</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/k5p3TozQt84'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/k5p3TozQt84/0.jpg"></div>
+                      <div class="desc">Multiple Vue Instances</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/EAONyIKrZN0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/EAONyIKrZN0/0.jpg"></div>
+                      <div class="desc">Intro to Components</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/rSyFM2FANtk'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/rSyFM2FANtk/0.jpg"></div>
+                      <div class="desc">Refs</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/MBZVDsB4VMA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/MBZVDsB4VMA/0.jpg"></div>
+                      <div class="desc">The Vue CLI</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yP5Tu3S_FtU'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/yP5Tu3S_FtU/0.jpg"></div>
+                      <div class="desc">Vue Files & The Root Component</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ko5Eijiaozo'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/ko5Eijiaozo/0.jpg"></div>
+                      <div class="desc">Nesting Components</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/6-us2D7GQCk'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/6-us2D7GQCk/0.jpg"></div>
+                      <div class="desc">Component CSS (scoped)</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9qqFH60isFc'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/9qqFH60isFc/0.jpg"></div>
+                      <div class="desc">Props</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/gfT0udzYkyw'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/gfT0udzYkyw/0.jpg"></div>
+                      <div class="desc">Primitive vs Reference Types</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/5pvG6fzkdFM'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/5pvG6fzkdFM/0.jpg"></div>
+                      <div class="desc">Events (child to parent)</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jzh4zQcfB0o'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/jzh4zQcfB0o/0.jpg"></div>
+                      <div class="desc">The Event Bus</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/8rn3SK4N8Go'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/8rn3SK4N8Go/0.jpg"></div>
+                      <div class="desc">Life-cycle Hooks</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/F44OoFk8spg'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/F44OoFk8spg/0.jpg"></div>
+                      <div class="desc">Slots</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/TEAtmCYYKZA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/09n2945JW_0/0.jpg"></div>
+                      <div class="desc">Dynamic Components</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yopDG8t60ko'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/yopDG8t60ko/0.jpg"></div>
+                      <div class="desc">Input Binding</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/IkymKuIkajE'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/IkymKuIkajE/0.jpg"></div>
+                      <div class="desc">Checkbox Binding</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xtmZVV9QpaA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/xtmZVV9QpaA/0.jpg"></div>
+                      <div class="desc">Select Box Binding</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/btDfVBPYI-U'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/btDfVBPYI-U/0.jpg"></div>
+                      <div class="desc">HTTP Requests</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/aoWqFLGCK60'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/aoWqFLGCK60/0.jpg"></div>
+                      <div class="desc">GET Requests</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/3-fLYMEKOU0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/3-fLYMEKOU0/0.jpg"></div>
+                      <div class="desc">Custom Directives</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/o8UspKnsV_0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/o8UspKnsV_0/0.jpg"></div>
+                      <div class="desc">Filters</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/G34_yNV8FMY'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/G34_yNV8FMY/0.jpg"></div>
+                      <div class="desc">Custom Search Filter</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/T5h6L5MFLRA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/T5h6L5MFLRA/0.jpg"></div>
+                      <div class="desc">Registering Things Locally</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/YZuml1Y9BmQ'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/YZuml1Y9BmQ/0.jpg"></div>
+                      <div class="desc">Mixins</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Zflo2-s4768'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Zflo2-s4768/0.jpg"></div>
+                      <div class="desc">Setting up Routing</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/js5Sr_ZSHDs'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/js5Sr_ZSHDs/0.jpg"></div>
+                      <div class="desc">Hash vs History (Routing)</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/yn0_6T4HwHs'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/yn0_6T4HwHs/0.jpg"></div>
+                      <div class="desc">Adding Router Links</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/KGFcgnCSS6A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/KGFcgnCSS6A/0.jpg"></div>
+                      <div class="desc">Route Parameters</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CzJyGo5rh7M'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/CzJyGo5rh7M/0.jpg"></div>
+                      <div class="desc">Posting to Firebase</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ieCsEdq94TA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/ieCsEdq94TA/0.jpg"></div>
+                      <div class="desc">Retrieving Posts from Firebase</div>
+                    </div>
+
+               </div>
+              </div>
+      
+              <!-- LEFT AND RIGHT ARROWS -->
+              <div class="arrows">
+                  <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                  <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                </div>
+  
             <br />
             <p class="back"><a href="../resources.html">Go back</a></p>
-						<p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br /><br />
-					</div>
-        		</div>
-      </section>
+            <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br /><br />
 
+            </div>
+        </div>
+      </section>
 	  <section>
 		<footer>
 		  <div class="wrapper">
 			  <ul class="footer_nav">
-				  <li>2019 by <a href="../index.html">undercode</a></li>
+				  <li>2019 by <a href="../index.html">undecode</a></li>
 				  <li><a href="../data-policy.html">Data-Policy</a></li>
 				  <li>support@undercode.com</li>
 				  <li>Lisbon, Portugal</li>
@@ -99,15 +334,31 @@
 			  </ul>
 		  </div>
 		</footer>
-	</section>
 
-	  <!-- ===== nav script ===== -->
-
-  <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
 
   <!-- ===== nav script end ===== -->
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.jsscript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".arrow-right").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "+=117"
+          }, 750);
+      });
+      $(".arrow-left").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "-=117"
+          }, 750);
+      });
+  });
+  </script>
+  
   </body>
 
   </html>
 
+ 
+  

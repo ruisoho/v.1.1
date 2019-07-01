@@ -3,30 +3,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Website ICON -->
-    <link rel="icon" type="image/png" href="../img/logo.png">
-    <!-- Main CSS -->
-    <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
-
-    <!-- Preload youtube video -->
-    <link rel="preload" href="https://www.youtube.com/embed/QAgrHLtG1Yk&list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv" as="document">
-
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <title>Undercode</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    
+    <!-- Main CSS -->
 
-        <!-- Font awesome -->
-        <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+  	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
+    <link rel = "stylesheet" type = "text/css" href="../css/videoplayer.css" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'UA-142588448-1');
-        </script>
+    <!-- Scripts-->
+
+    <script src="http://www.google-analytics.com/ga.js" type="text/javascript" async=""></script>
+
+    <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142588448-1');
+    </script>
 
 </head>
 <body>
@@ -44,7 +46,7 @@
                 <a href="../index.html" class="nav-links">Home</a>
             </li>
             <li>
-                <a href="../about.html" class="nav-links ">About us</a>
+                    <a href="../about.html" class="nav-links ">About us</a>
             </li>
             <li>
                 <a href="../resources.html" class="nav-links">Resources</a>
@@ -61,24 +63,99 @@
         <div class="wrapper center_two">
       <h1>Course</h1>
       <hr>
-			<h1 class="course-title">Bootstrap 4</h1>
-			<p class="course-description">In this Bootstrap 4 tutorial, I'll introduce you to the new concepts adopted in Bootstrap 4.</p>
-			<br />
-			<!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
-			<button class="course-download">Download</button> -->
+          <h1 class="course-title">Bootstrap 4</h1>
+		    	<p class="course-description">In this Bootstrap 4 tutorial, I'll introduce you to the new concepts adopted in Bootstrap 4.</p>
+                <br />
+                <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
+                <button class="course-download">Download</button> -->
 		</div>
 		<div class="wrapper">
-			<div class="content-video">
-          <iframe width="660" height="415" src="https://www.youtube.com/embed/QAgrHLtG1Yk&list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv" 
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-        <br />
-        <p class="back"><a href="../resources.html">Go back</a></p>
-				<p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br /><br />
-			</div>
+        <div class="container">
+
+            <!-- THE YOUTUBE PLAYER -->
+            <div class="vid-container">
+              <iframe width="560" height="315" id="vid_frame" src="https://www.youtube.com/embed/QAgrHLtG1Yk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      
+          <!-- THE PLAYLIST -->
+          <div class="vid-list-container">
+              <div class="vid-list">
+
+                    <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/QAgrHLtG1Yk'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/QAgrHLtG1Yk/0.jpg"></div>
+                      <div class="desc">Video 01 - Introduction</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/N77ZsKq4esI'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/N77ZsKq4esI/0.jpg"></div>
+                      <div class="desc">Video 02 - Installing Bootstrap 4</div>
+                    </div>
+                  
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/4G4aBvRB3B4'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/4G4aBvRB3B4/0.jpg"></div>
+                      <div class="desc">Video 03 - Bootstrap Reboot</div>
+                    </div>
+     
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/E7R23erzuGg'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/E7R23erzuGg/0.jpg"></div>
+                      <div class="desc">Video 04 - Containers</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CGpWqSIjCbQ'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/CGpWqSIjCbQ/0.jpg"></div>
+                      <div class="desc">Video 05 - Grid Basics</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/rvlvpX-rbgc'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/rvlvpX-rbgc/0.jpg"></div>
+                      <div class="desc">Video 06 - Flex Grid</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9Lpxzhzjy9w'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/9Lpxzhzjy9w/0.jpg"></div>
+                      <div class="desc">Video 07 - Jumbotrons</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/WWKuaUtgNBI'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/WWKuaUtgNBI/0.jpg"></div>
+                      <div class="desc">Video 08 - Utilities and Typography</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Izc-0yF4EA0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Izc-0yF4EA0/0.jpg"></div>
+                      <div class="desc">Video 09 - Cards</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/YRLOf5V1eHo'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/YRLOf5V1eHo/0.jpg"></div>
+                      <div class="desc">Video 10 - Bootstrap Navs</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/g3iipbujyDg'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/g3iipbujyDg/0.jpg"></div>
+                      <div class="desc">Video 11 - Responsive Navbars</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/AeCFqEz5Whs'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/AeCFqEz5Whs/0.jpg"></div>
+                      <div class="desc">Video 12 - Tooltips</div>
+                    </div>
+
+               </div>
+              </div>
+      
+              <!-- LEFT AND RIGHT ARROWS -->
+              <div class="arrows">
+                  <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                  <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                </div>
+  
+            <br />
+            <p class="back"><a href="../resources.html">Go back</a></p>
+						<p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg " target="_blank">The Net Ninja</a></p><br /><br />
+            </div>
         </div>
       </section>
-
 	  <section>
 		<footer>
 		  <div class="wrapper">
@@ -101,15 +178,31 @@
 			  </ul>
 		  </div>
 		</footer>
-	</section>
 
-	  <!-- ===== nav script ===== -->
-
-  <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
 
   <!-- ===== nav script end ===== -->
-
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.jsscript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".arrow-right").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "+=117"
+          }, 750);
+      });
+      $(".arrow-left").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "-=117"
+          }, 750);
+      });
+  });
+  </script>
+  
   </body>
 
   </html>
+
+  <h1 class="course-title">Bootstrap 4</h1>
+			<p class="course-description">In this Bootstrap 4 tutorial, I'll introduce you to the new concepts adopted in Bootstrap 4.</p>

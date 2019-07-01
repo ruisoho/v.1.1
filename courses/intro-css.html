@@ -3,28 +3,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Website ICON -->
-    <link rel="icon" type="image/png" href="../img/logo.png">
-    <!-- Main CSS -->
-    <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
-
-   <!-- Preload youtube video -->
-   <link rel="preload" href="https://www.youtube.com/embed/I9XRrlOOazo" as="document">
-
-   <!-- Font awesome -->
-   <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
-
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
-   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
- 
-   gtag('config', 'UA-142588448-1');
-   </script>
-
     <title>Undercode</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    
+    <!-- Main CSS -->
+
+  	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
+    <link rel = "stylesheet" type = "text/css" href="../css/videoplayer.css" />
+
+    <!-- Scripts-->
+
+    <script src="http://www.google-analytics.com/ga.js" type="text/javascript" async=""></script>
+
+    <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142588448-1');
+    </script>
 
 </head>
 <body>
@@ -35,8 +39,7 @@
           <span class="navbar-toggle" id="js-navbar-toggle">
               <i class="fa fa-bars"></i>
           </span>
-          <a href="../index.html" class="logo"><!-- Font awesome -->
-            <script src="https://kit.fontawesome.com/8049d5025a.js"></script></a>
+          <a href="../index.html" class="logo"><img src="../img/logo_nav.jpg"></a>
 
           <ul class="main-nav" id="js-menu">
             <li>
@@ -60,24 +63,302 @@
         <div class="wrapper center_two">
       <h1>Course</h1>
       <hr>
-                    <h1 class="course-title">Introduction to CSS</h1>
-                    <p class="course-description">Welcome to your CSS tutorial for beginners. Join us.</p>
-                    <br />
-                    <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
-                    <button class="course-download">Download</button> -->
-				</div>
-				<div class="wrapper">
-                	<div class="content-video">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/I9XRrlOOazo" frameborder="0" 
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
+      <h1 class="course-title">Introduction to CSS</h1>
+      <p class="course-description">Welcome to your CSS tutorial for beginners. Join us.</p>
+                <br />
+                <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
+                <button class="course-download">Download</button> -->
+		</div>
+		<div class="wrapper">
+        <div class="container">
+
+            <!-- THE YOUTUBE PLAYER -->
+            <div class="vid-container">
+              <iframe width="560" height="315" id="vid_frame" src="https://www.youtube.com/embed/4BEyFVufmM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      
+          <!-- THE PLAYLIST -->
+          <div class="vid-list-container">
+              <div class="vid-list">
+
+                    <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/4BEyFVufmM8'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/4BEyFVufmM8/0.jpg"></div>
+                      <div class="desc">Introduction to CSS</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/O5nskjZ_GoI'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/O5nskjZ_GoI/0.jpg"></div>
+                      <div class="desc">What is CSS? </div>
+                    </div>
+                  
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/iqTgros3FTc'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/iqTgros3FTc/0.jpg"></div>
+                      <div class="desc">Default Browser Styles</div>
+                    </div>
+     
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/1CqHws4WZ-M'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/1CqHws4WZ-M/0.jpg"></div>
+                      <div class="desc">Basic CSS Syntax</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jpjzhva3owA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/jpjzhva3owA/0.jpg"></div>
+                      <div class="desc">Inline & Embedded Styles
+                        </div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Wj2iI7w37Y0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Wj2iI7w37Y0/0.jpg"></div>
+                      <div class="desc">External Style Sheets</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/qfpo_XsM0hM'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/qfpo_XsM0hM/0.jpg"></div>
+                      <div class="desc">Comments and Where to Use Them</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/f7c7bTrqXic'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/f7c7bTrqXic/0.jpg"></div>
+                      <div class="desc">Targeting Elements with CSS</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/4oPvurjpcNw'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/4oPvurjpcNw/0.jpg"></div>
+                      <div class="desc">CSS Conflicts & the Cascade</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ZMpaebQ3n6A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/ZMpaebQ3n6A/0.jpg"></div>
+                      <div class="desc">Inheritance</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ZMpaebQ3n6A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/ZMpaebQ3n6A/0.jpg"></div>
+                      <div class="desc">Selector Specificty</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ZMpaebQ3n6A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/ZMpaebQ3n6A/0.jpg"></div>
+                      <div class="desc">The Important Declaration</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/3SOf8gZlBhI'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/3SOf8gZlBhI/0.jpg"></div>
+                      <div class="desc">Targeting Multiple Elements</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/84KE7OwMjYY'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/84KE7OwMjYY/0.jpg"></div>
+                      <div class="desc">Descendant Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/MlJrAhGVIis'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/MlJrAhGVIis/0.jpg"></div>
+                      <div class="desc">Child Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/K92X4yyyfNY'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/K92X4yyyfNY/0.jpg"></div>
+                      <div class="desc">Adjacent Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/GVocONem9lw'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/GVocONem9lw/0.jpg"></div>
+                      <div class="desc">Attribute Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/SlqUbzvuqDg'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/SlqUbzvuqDg/0.jpg"></div>
+                      <div class="desc">Pseudo Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XT2PFpOyDzY'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/XT2PFpOyDzY/0.jpg"></div>
+                      <div class="desc">Hover, Active & Visited Effects</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/UxHFB5_CSXc'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/UxHFB5_CSXc/0.jpg"></div>
+                      <div class="desc">First & Last Child Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/7eVUWLv6gz4'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/7eVUWLv6gz4/0.jpg"></div>
+                      <div class="desc">First & Last of Type Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/TVj1avJj8a8'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/TVj1avJj8a8/0.jpg"></div>
+                      <div class="desc">nth Child Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/E45xQZTgaUI'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/E45xQZTgaUI/0.jpg"></div>
+                      <div class="desc">nth of Type Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/rK54iCKi6TE'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/rK54iCKi6TE/0.jpg"></div>
+                      <div class="desc">Combining Selectors</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/EO4ToIX-ZQk'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/EO4ToIX-ZQk/0.jpg"></div>
+                      <div class="desc">The Universal Selector</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/799zrGVpfA8'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/799zrGVpfA8/0.jpg"></div>
+                      <div class="desc">Font Size</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/v2o8LJWnox'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/v2o8LJWnox/0.jpg"></div>
+                      <div class="desc">Font Family</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/dm54To0EOpw'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/dm54To0EOpw/0.jpg"></div>
+                      <div class="desc">Text Decoration</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/qeh4UeaGTnc'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/qeh4UeaGTnc/0.jpg"></div>
+                      <div class="desc">Font Weight</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/j0FS2hCoIjs'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/j0FS2hCoIjs/0.jpg"></div>
+                      <div class="desc">Text Transform</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/QzKu1qG4p5A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/QzKu1qG4p5A/0.jpg"></div>
+                      <div class="desc">Text Colour</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/w_1pQGfrHT8'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/w_1pQGfrHT8/0.jpg"></div>
+                      <div class="desc">Styling Links</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/4Gyd8hbrcBk'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/4Gyd8hbrcBk/0.jpg"></div>
+                      <div class="desc">Letter Spacing & Line Height</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/DdcD9otFk4A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/DdcD9otFk4A/0.jpg"></div>
+                      <div class="desc">Paragraph Spacing</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Qx-yzUBqatQ'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Qx-yzUBqatQ/0.jpg"></div>
+                      <div class="desc">The Box Model
+                        </div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ggo0di5L6sA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/ggo0di5L6sA/0.jpg"></div>
+                      <div class="desc">Margins</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/4YF-eaX4P0k'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/4YF-eaX4P0k/0.jpg"></div>
+                      <div class="desc">Padding</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/0Sm7MkZXT-8'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/0Sm7MkZXT-8/0.jpg"></div>
+                      <div class="desc">Padding & Margin Long-hand</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/HuiPIK-0-_A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/HuiPIK-0-_A/0.jpg"></div>
+                      <div class="desc">Borders</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/HuiPIK-0-_A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/HuiPIK-0-_A/0.jpg"></div>
+                      <div class="desc">Block-level Elements</div>
+                    </div>
+                    
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/b9lWNg8lwW4'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/b9lWNg8lwW4/0.jpg"></div>
+                      <div class="desc">Width & Height</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/7WPgQVMayWI'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/7WPgQVMayWI/0.jpg"></div>
+                      <div class="desc">Rounded Corners</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jY-oTfLGpvI'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/jY-oTfLGpvI/0.jpg"></div>
+                      <div class="desc">Backgrounds</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/0CkSJVl_g00'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/0CkSJVl_g00/0.jpg"></div>
+                      <div class="desc">Background Shorthand</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Sj7Hs94uZjE'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Sj7Hs94uZjE/0.jpg"></div>
+                      <div class="desc">Multiple Backgrounds</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/YYMCcm4EM2M'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/YYMCcm4EM2M/0.jpg"></div>
+                      <div class="desc">Color</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/tYXQHuoaihU'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/tYXQHuoaihU/0.jpg"></div>
+                      <div class="desc">Opacity</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wTk4Wuckd0U'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/wTk4Wuckd0U/0.jpg"></div>
+                      <div class="desc"> CSS Gradients</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Q1uowGztXGs'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Q1uowGztXGs/0.jpg"></div>
+                      <div class="desc">Box Shadow</div>
+                    </div>
+      
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/a0nkO-hVqGQ'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/a0nkO-hVqGQ/0.jpg"></div>
+                      <div class="desc">Browser Support</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/B7dIKj47N5A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/B7dIKj47N5A/0.jpg"></div>
+                      <div class="desc">CSS Website Build Pt1</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/VZy528TnkBE'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/VZy528TnkBE/0.jpg"></div>
+                      <div class="desc">CSS Website Build Pt2</div>
+                    </div>
+      
+               </div>
+              </div>
+      
+              <!-- LEFT AND RIGHT ARROWS -->
+              <div class="arrows">
+                  <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                  <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                </div>
+  
             <br />
             <p class="back"><a href="../resources.html">Go back</a></p>
 						<p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br /><br />
-				</div>
+
+            </div>
         </div>
       </section>
-
 	  <section>
 		<footer>
 		  <div class="wrapper">
@@ -100,15 +381,30 @@
 			  </ul>
 		  </div>
 		</footer>
-	</section>
 
-	  <!-- ===== nav script ===== -->
-
-  <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
 
   <!-- ===== nav script end ===== -->
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.jsscript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".arrow-right").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "+=117"
+          }, 750);
+      });
+      $(".arrow-left").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "-=117"
+          }, 750);
+      });
+  });
+  </script>
+  
   </body>
 
   </html>
 
+  
