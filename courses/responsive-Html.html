@@ -3,17 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Website ICON -->
-    <link rel="icon" type="image/png" href="../img/logo.png">
-    <!-- Main CSS -->
-    <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
-
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <title>Undercode</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    
+    <!-- Main CSS -->
 
-<!-- Font awesome -->
-<script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+  	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
+    <link rel = "stylesheet" type = "text/css" href="../css/videoplayer.css" />
+
+    <!-- Scripts-->
+
+    <script src="http://www.google-analytics.com/ga.js" type="text/javascript" async=""></script>
+
+    <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-142588448-1');
+    </script>
+
 </head>
 <body>
       <!--============== navbar section ================= -->
@@ -47,27 +63,100 @@
         <div class="wrapper center_two">
       <h1>Course</h1>
       <hr>
-                    <h1 class="course-title">Responsive Html</h1>
-                    <p class="course-description">Welcome to your first responsive web design tutorial.</p>
-                    <br />
-                    <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
-                    <button class="course-download">Download</button> -->
-				</div>
-				<div class="wrapper">
-                <div class="content-video">
-						<embed class="video" id="video" src="" wmode="transparent" type="application/x-shockwave-flash" allowfullscreen="true" title="Video Player"></embed>
+      <h1 class="course-title">Responsive Html</h1>
+      <p class="course-description">Welcome to your first responsive web design tutorial.</p>
+                <br />
+                <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
+                <button class="course-download">Download</button> -->
+		</div>
+		<div class="wrapper">
+        <div class="container">
+
+            <!-- THE YOUTUBE PLAYER -->
+            <div class="vid-container">
+              <iframe width="560" height="315" id="vid_frame" src="https://www.youtube.com/embed/3tLb3i7GB38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      
+          <!-- THE PLAYLIST -->
+          <div class="vid-list-container">
+              <div class="vid-list">
+
+                    <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/3tLb3i7GB38'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/3tLb3i7GB38/0.jpg"></div>
+                      <div class="desc">What is Responsive Web Design?</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/MnjOcfL3agQ'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/MnjOcfL3agQ/0.jpg"></div>
+                      <div class="desc">Responsive Website Example</div>
+                    </div>
+                  
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ykgQosTbeSQ'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/ykgQosTbeSQ/0.jpg"></div>
+                      <div class="desc">Intro to the Viewport</div>
+                    </div>
+     
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed5xzaGSYd7jM'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi5xzaGSYd7jM/0.jpg"></div>
+                      <div class="desc">Media Queries</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/0gBnRll5XgA'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/0gBnRll5XgA/0.jpg"></div>
+                      <div class="desc">Fluid Layouts</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/hS97LtBdM7I'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/hS97LtBdM7I/0.jpg"></div>
+                      <div class="desc">Tablet Styles</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/RRLDd1kaw3o'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/RRLDd1kaw3o/0.jpg"></div>
+                      <div class="desc">Mobile Styles</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/FDh7Mdl2oww'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/FDh7Mdl2oww/0.jpg"></div>
+                      <div class="desc">Making a Mobile Drop-down Menut</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/LlSH8u0o1-A'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/LlSH8u0o1-A/0.jpg"></div>
+                      <div class="desc">Responsive Images & Polyfills</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/RW5jHz3bTb0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/RW5jHz3bTb0/0.jpg"></div>
+                      <div class="desc">Responsive Frameworks Introduction</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jW3TFkXrE-k'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/jW3TFkXrE-k/0.jpg"></div>
+                      <div class="desc">What Next?</div>
+                    </div>
+      
+               </div>
+              </div>
+      
+              <!-- LEFT AND RIGHT ARROWS -->
+              <div class="arrows">
+                  <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                  <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                </div>
+  
             <br />
             <p class="back"><a href="../resources.html">Go back</a></p>
 						<p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></p><br /><br />
-                </div>
+
+            </div>
         </div>
       </section>
-
 	  <section>
 		<footer>
 		  <div class="wrapper">
 			  <ul class="footer_nav">
-				  <li>2019 by <a href="../index.html">undercode</a></li>
+				  <li>2019 by <a href="../index.html">undecode</a></li>
 				  <li><a href="../data-policy.html">Data-Policy</a></li>
 				  <li>support@undercode.com</li>
 				  <li>Lisbon, Portugal</li>
@@ -85,35 +174,32 @@
 			  </ul>
 		  </div>
 		</footer>
-	</section>
 
-	  <!-- ===== nav script ===== -->
-
-  <script type="text/javascript" src="../js/app.js"></script>
-
-
+    <script type="text/javascript" src="../js/app.js"></script>
 
   <!-- ===== nav script end ===== -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery-2.1.1.js"></script>
-
-  <script src="js/jquery.mixitup.min.js"></script>
-
-  <script src="js/main.js"></script>
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.jsscript"></script>
   <script type="text/javascript">
-	$(window).load(function () {
-		$("#video")[0].src = "https://www.youtube.com/v/3tLb3i7GB38&list=PL4cUxeGkcC9g9Vh9MAA-XKnfJsWZnPZFw";
-	});
+    $(document).ready(function () {
+      $(".arrow-right").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "+=117"
+          }, 750);
+      });
+      $(".arrow-left").bind("click", function (event) {
+          event.preventDefault();
+          $(".vid-list-container").stop().animate({
+              scrollLeft: "-=117"
+          }, 750);
+      });
+  });
   </script>
-
-
-  <!-- Resource jQuery -->
-
+  
   </body>
 
   </html>
 
+
+  
+  

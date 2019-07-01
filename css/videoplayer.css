@@ -131,3 +131,13 @@
 				top: -17px;
 			}
 		}
+
+		.course-download{
+		background-color: #029DE0;
+		margin-top: 10px;
+		margin-bottom: 35px;
+      	padding: 10px 20px;
+      color: #fff;
+      border: 1px solid #029DE0;
+      border-radius: 10px;
+		}
