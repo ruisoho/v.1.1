@@ -1,0 +1,100 @@
+
+          <!-- THE PLAYLIST -->
+          <div class="vid-list-container">
+              <div class="vid-list">
+
+                    <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Y1BlT4_c_SU'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Y1BlT4_c_SU/0.jpg"></div>
+                      <div class="desc">Video 01 - HTML Introduction</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/cZCq8lQ-vZ0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/cZCq8lQ-vZ0/0.jpg"></div>
+                      <div class="desc">Video 02 - What is HTML</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/IJWcX2EDAKg'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/IJWcX2EDAKg/0.jpg"></div>
+                      <div class="desc">Video 03 - HTML Syntax & Structure</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/MnaKa7igX7k'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/MnaKa7igX7k/0.jpg"></div>
+                      <div class="desc">Video 04 - Your First Web Page</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/mNRzWMH5xK0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/mNRzWMH5xK0/0.jpg"></div>
+                      <div class="desc">Video 05 - Head and Body Tag</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XxZPrn1VFTc'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/XxZPrn1VFTc/0.jpg"></div>
+                      <div class="desc">Video 06 - Headings and Text</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/UWdepvkLE8U'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/UWdepvkLE8U/0.jpg"></div>
+                      <div class="desc">Video 07 - Heading Structure</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/OwC4xNWihoM'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/OwC4xNWihoM/0.jpg"></div>
+                      <div class="desc">Video 08 - Default Browser Styles</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/g6xsNHnAmlE'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/g6xsNHnAmlE/0.jpg"></div>
+                      <div class="desc">Video 09 - The img Tag</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/f8pAb3IuECk'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/f8pAb3IuECk/0.jpg"></div>
+                      <div class="desc">Video 10 - HTML Links</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/HeQvQEiGMKk'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/HeQvQEiGMKk/0.jpg"></div>
+                      <div class="desc">Video 11 - HTML Lists</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xkF-cKpzREU'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/xkF-cKpzREU/0.jpg"></div>
+                      <div class="desc">Video 12 - HR and BR Tags</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XQlr727A8w'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/XQlr727A8w/0.jpg"></div>
+                      <div class="desc">Video 13 - The div Tag</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9UNmumTYuq8'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/9UNmumTYuq8/0.jpg"></div>
+                      <div class="desc">Video 14 - ID's and Classes</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Tc4IsPFB01E'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Tc4IsPFB01E/0.jpg"></div>
+                      <div class="desc">Video 15 - Adding CSS to HTML</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Gd0RBdFRvF0'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/Gd0RBdFRvF0/0.jpg"></div>
+                      <div class="desc">Video 16 - Adding JavaScript to HTML</div>
+                    </div>
+
+                    <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xuA8kt2xnv8'">
+                      <div class="thumb"><img src="http://img.youtube.com/vi/xuA8kt2xnv8/0.jpg"></div>
+                      <div class="desc">Video 17 - What To Do Next</div>
+                    </div>
+
+
+
+               </div>
+              </div>
+
+              <!-- LEFT AND RIGHT ARROWS -->
+              <div class="arrows">
+                  <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                  <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                </div>

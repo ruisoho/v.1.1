@@ -28,7 +28,7 @@ body {
  .main-nav-scrolled {
     position: fixed;
     top: 0;
-  } 
+  }
 
   .form_one {
     text-align: center;
@@ -313,9 +313,17 @@ hr {
       text-align: center;
   }
 
+  .no_top {
+      margin: 20px 0;
+  }
+
   .center_two {
       margin-top: 50px;
       margin-bottom: 50px;
+  }
+
+  .center_two h1 {
+      font-size: 22px;
   }
 
 .course-title {

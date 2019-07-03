@@ -3,33 +3,33 @@
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      
+
           <!-- Website ICON -->
           <title>Undercode</title>
           <link rel="icon" type="image/png" href="../img/logo.png">
-          
+
           <!-- Main CSS -->
-      
+
           <link href="css/font-awesome.min.css" rel="stylesheet">
           <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
           <link rel = "stylesheet" type = "text/css" href="../css/videoplayer.css" />
-      
+
           <!-- Scripts-->
-      
+
           <script src="http://www.google-analytics.com/ga.js" type="text/javascript" async=""></script>
-      
+
           <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
-      
+
           <!-- Global site tag (gtag.js) - Google Analytics -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
           <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-      
+
             gtag('config', 'UA-142588448-1');
           </script>
-      
+
       </head>
       <body>
             <!--============== navbar section ================= -->
@@ -40,7 +40,7 @@
                     <i class="fa fa-bars"></i>
                 </span>
                 <a href="../index.html" class="logo"><img src="../img/logo_nav.jpg"></a>
-      
+
                 <ul class="main-nav" id="js-menu">
                   <li>
                       <a href="../index.html" class="nav-links">Home</a>
@@ -58,166 +58,157 @@
               </nav>
             </div>
         </section> <!-- ===== navbar end ===== -->
-      
+
         <section> <!-- NEED JS SCRIPT TO CHANGE THE DOM!-->
-              <div class="wrapper center_two">
-            <h1>Podcast</h1>
-            <hr>
-            <h1 class="course-title">The Pionners Show</h1>
+          <div class="wrapper center_two">
+            <div class="flex_container">
+              <div class="content">
+                  <h1>Podcast</h1>
+                  <hr>
+                  <h1 class="course-title">The Pionners Show</h1>
                     <p class="course-description">A show Where we talk with Inovators, Makers, Entrepeneurs and much more! Stay Tuned!</p>
-                      <br />
-                      <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
-                      <button class="course-download">Download</button> -->
+                    <br />
+                    <iframe id="vid_frame" src="https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/00-intro-to-the-pioneers-show?theme=default&cover=1&latest=1" frameBorder="0" width="100%" height="110px" allow="autoplay"></iframe>
+              </div>
+              <div class="content">
+                  <div class="vid-list-container">
+                      <div class="vid-list">
+                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/01-shikhil-sharma'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#00 - Intro to the Pioneers Show</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/02-lasha-antadze'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#01 - Talking CyberSecurity with Shikhil Sharma</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/03-sam-williams-blockchain-entrepreneur'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#03 - Talking Blockchain and Democracy with Sam Williams</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/04-nathan'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#04 - Talking Blockchain & Conflict Minerals with Nathan Williams</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/05-marcin-inuru'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#05 - Talking Serial Entrepreneurship and Printing with Marcin Ratajczak</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/06-felipe-stark">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#06 - Talking Recruiting and Blockchain with Felipe Stark</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/07-oliver-sauter'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#07 - Talking Internet Usage and Investment Types with Oliver Sauter</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/08-talking-vr-and-digital-healthcare-with-valentino-megale'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#08 - Talking VR and Digital Healthcare with Valentino Megale</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/09-talking-personal-marketing-with-pranav-ahuja'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#09 - Talking Personal Marketing with Pranav Ahuja</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/10-talking-social-media-and-paying-it-forward-with-jag-singh'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#10 - Talking Social Media and Paying it Forward with Jag Singh</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/11-talking-vr-and-mental-rehabilitation-with-barbara-stegman'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#11 - Talking VR and Mental Rehabilitation with Barbara Stegmann</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/12-talking-fashion-tech-and-design-with-sara-ahmadi'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#12 - Talking Retail Tech and Design with Sara Ahmadi</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/13-talking-personal-development-and-holacracy-with-nicklas-t'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#13 - Talking Personal Development and Holacracy with Nicklas Teicke</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/14-talking-linkedin-and-transferable-skills-with-ariana-thac'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#14 - Talking LinkedIn and Transferable Skills with Ariana Thacker</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/15-talking-solving-own-problems-and-maker-movement-with-rama'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#15 - Talking Solving Own Problems and Maker Movement with Raman Shalupau</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/16-talking-business-strategy-with-best-selling-author-guente'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc"># 16 - Talking Business Strategy with Best Selling Author Guenter Faltin</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/17-talking-github-with-scott-chacon-pt1'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#17 - Talking GitHub with Scott Chacon Pt1 </div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/18-talking-language-learning-with-scott-chacon'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#18 - Talking Language Learning with Scott Chacon Pt2</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/19-talking-augmented-creativity-with-markus-dttmann'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#19 - Talking Augmented Creativity with Markus Düttmann</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/20-roshni?theme=default&cover=1&latest=1'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#20- Talking LinkedIn and Law of Attraction with Roshni Chellani</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/21-talking-about-programming-and-learning-to-code-with-elena'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#21 - Talking about Programming and Learning To Code with Elena Kolevska</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/22-talking-creativity-and-lighting-tech-with-sebastian-meall'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#22 - Talking Creativity and Lighting Tech with Sebastian Mealla</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/23-talking-skill-learning-and-hr-tech-with-max-bauermeister'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#23 - Talking Skill Learning and HR Tech with Max Bauermeister</div>
+                                </div>
+
+                                <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/24-talking-education-coding-and-career-shifts-with-stefan-mi'">
+                                  <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
+                                  <div class="desc">#24 - Talking Education, Coding and Career Shifts with Stefan Mischook</div>
+                                </div>
+                       </div>
+                       </div>
+              </div>
+            </div>
           </div>
-          <div class="wrapper">
-              <div class="container">
-      
-                  <!-- THE YOUTUBE PLAYER -->
-                  <br class="vid-container">
-
-                  <iframe id="vid_frame" src="https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/00-intro-to-the-pioneers-show?theme=default&cover=1&latest=1" frameBorder="0" width="100%" height="110px" allow="autoplay"></iframe>
-                    
-                    
-            
-                THE PLAYLIST 
-                <div class="vid-list-container">
-                    <div class="vid-list">
-                            <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/01-shikhil-sharma'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#00 - Intro to the Pioneers Show</div>
-                              </div>
-                              
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/02-lasha-antadze'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#01 - Talking CyberSecurity with Shikhil Sharma</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/03-sam-williams-blockchain-entrepreneur'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#03 - Talking Blockchain and Democracy with Sam Williams</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/04-nathan'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#04 - Talking Blockchain & Conflict Minerals with Nathan Williams</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/05-marcin-inuru'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#05 - Talking Serial Entrepreneurship and Printing with Marcin Ratajczak</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/06-felipe-stark">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#06 - Talking Recruiting and Blockchain with Felipe Stark</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/07-oliver-sauter'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#07 - Talking Internet Usage and Investment Types with Oliver Sauter</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/08-talking-vr-and-digital-healthcare-with-valentino-megale'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#08 - Talking VR and Digital Healthcare with Valentino Megale</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/09-talking-personal-marketing-with-pranav-ahuja'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#09 - Talking Personal Marketing with Pranav Ahuja</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/10-talking-social-media-and-paying-it-forward-with-jag-singh'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#10 - Talking Social Media and Paying it Forward with Jag Singh</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/11-talking-vr-and-mental-rehabilitation-with-barbara-stegman'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#11 - Talking VR and Mental Rehabilitation with Barbara Stegmann</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/12-talking-fashion-tech-and-design-with-sara-ahmadi'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#12 - Talking Retail Tech and Design with Sara Ahmadi</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/13-talking-personal-development-and-holacracy-with-nicklas-t'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#13 - Talking Personal Development and Holacracy with Nicklas Teicke</div>
-                              </div>
-                              
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/14-talking-linkedin-and-transferable-skills-with-ariana-thac'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#14 - Talking LinkedIn and Transferable Skills with Ariana Thacker</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/15-talking-solving-own-problems-and-maker-movement-with-rama'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#15 - Talking Solving Own Problems and Maker Movement with Raman Shalupau</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/16-talking-business-strategy-with-best-selling-author-guente'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc"># 16 - Talking Business Strategy with Best Selling Author Guenter Faltin</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/17-talking-github-with-scott-chacon-pt1'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#17 - Talking GitHub with Scott Chacon Pt1 </div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/18-talking-language-learning-with-scott-chacon'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#18 - Talking Language Learning with Scott Chacon Pt2</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/19-talking-augmented-creativity-with-markus-dttmann'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#19 - Talking Augmented Creativity with Markus Düttmann</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/20-roshni?theme=default&cover=1&latest=1'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#20- Talking LinkedIn and Law of Attraction with Roshni Chellani</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/21-talking-about-programming-and-learning-to-code-with-elena'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#21 - Talking about Programming and Learning To Code with Elena Kolevska</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/22-talking-creativity-and-lighting-tech-with-sebastian-meall'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#22 - Talking Creativity and Lighting Tech with Sebastian Mealla</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/23-talking-skill-learning-and-hr-tech-with-max-bauermeister'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#23 - Talking Skill Learning and HR Tech with Max Bauermeister</div>
-                              </div>
-
-                              <div class="vid-item" selected="true" onclick="document.getElementById('vid_frame').src='https://player.pippa.io/pioneers-show-with-andr-de-albuquerque/episodes/24-talking-education-coding-and-career-shifts-with-stefan-mi'">
-                                <div class="thumb"><img src="https://res.cloudinary.com/pippa/image/fetch/h_750,w_750,f_auto/https://assets.pippa.io/shows/5b2269815933d6e2213ccca4/1528982037255-982cf608d34d4cb4298dc47cd2a661e0.jpeg"></div>
-                                <div class="desc">#24 - Talking Education, Coding and Career Shifts with Stefan Mischook</div>
-                              </div>
-                    
-                     </div>
-                    </div>
-            
-                    <div class="arrows">
+                    <!-- <div class="arrows">
                         <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
                         <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
-                      </div>
-                    
-                  <br />
-                  <p class="back"><a href="../resources.html">Go back</a></p>
-                  <p>Powered by: <a href="https://twitter.com/itstheandre" target="_blank">André de Alburquerque</a></p><br /><br /
-                  </div>
-              </div>
-            </section>
-          <section>
-          <footer>
+                      </div> -->
+            <br />
+            <div class="wrapper">
+            <p class="back"><a href="../resources.html">Go back</a></p>
+            <p>Powered by: <a href="https://twitter.com/itstheandre" target="_blank">André de Alburquerque</a></p><br /><br />
+          </div>
+      </section>
+      <section>
+        <footer>
             <div class="wrapper">
               <ul class="footer_nav">
                 <li>2019 by <a href="../index.html">undecode</a></li>
@@ -227,22 +218,22 @@
                 <li>
                   <ul class="social_icons">
                     <li><a href="https://twitter.com/Undercodeorg"><i class="fab fa-twitter"></i></a></li>
-      
+
                     <li> <a href="https://www.facebook.com/undercode.org"><i class="fab fa-facebook"></i></li></li>
-      
+
                     <li><a href="https://github.com/undercodeorg"><i class="fab fa-github"></i></li>
-      
+
                     <li><a href="https://www.linkedin.com/company/undercodeorg"><i class="fab fa-linkedin"></i></a></li>
                   </ul>
                 </li>
               </ul>
             </div>
           </footer>
-      
+
           <script type="text/javascript" src="../js/app.js"></script>
-      
+
         <!-- ===== nav script end ===== -->
-        
+
         </body>
-      
+
         </html>
