@@ -1,0 +1,78 @@
+.main {
+    width: 100%;
+    position: relative;
+    background: url('../../images/wood-2.jpg');
+    background-size: cover;
+    margin: 50px 0;
+}
+
+  .container {
+    width: 150px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+  .container .slider {
+    width: 100%;
+    height: 2500px;
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+  .container .slider .box {
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+
+  .main .nav {
+    position: absolute;
+    right:  40%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+    background: rgba(255,255,255,.97)!important;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    opacity: 0.5;
+}
+
+
+  .main:hover .nav {
+    opacity: 1
+}
+
+.main .nav:hover {
+    background: rgba(10,10,10,0.6);
+    color: orangered;
+  }
+
+  .next {top: 0}
+  .previous {bottom: 0}
+
+  .no_margin {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    color: #029DE0;
+  }
+
+#img-responsive {
+    margin: 10px;
+    width: 100%;
+    height: 70px;
+}
+
+#img-responsive:hover {
+  cursor: pointer;
+}
+
+.vid-container {
+  width: 100%;
+}
