@@ -12,7 +12,8 @@
 
   	<link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel = "stylesheet" type = "text/css" href="../css/main.css" />
-    <link rel = "stylesheet" type = "text/css" href="../css/videoplayer.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slideshow.css" />
+    <link rel = "stylesheet" type = "text/css" href="/css/videoplayer.css" />
 
     <!-- Scripts-->
 
@@ -69,7 +70,7 @@
               <h1 class="course-title">The Net Ninja</h1>
               <p class="course-description">Learn HTML5 by building your own website in less than an hour!</p>
             </div>
-              <div class="container">
+              <div>
                 <!-- THE YOUTUBE PLAYER -->
                 <div class="vid-container">
                   <iframe width="560" height="315" id="vid_frame" src="https://www.youtube.com/embed/Y1BlT4_c_SU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -79,8 +80,125 @@
                 <p>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg " target="_blank">The Net Ninja</a></p><br /><br />
             </div>
           </div>
+
+
+          <!-- Playlist Section
+
+            Inside each box, is a playlist div for each
+            resource. See through it all and be familiar with how I implemented the CSS ids and classes
+            which is not DRY but it works for now until we come up with a better solution.
+
+            For some reason unknown to me, the Device responsiveness breaks at my end, do check if it breaks at yours too.
+
+          -->
           <div class="content">
-            <!-- Other content to the right-->
+              <div class="main">
+
+                  <div class="container">
+
+                      <div class="slider" id="sld">
+
+                          <div class="box">
+                              <div selected="true" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Y1BlT4_c_SU'">
+                                <img id="img-responsive" src="http://img.youtube.com/vi/Y1BlT4_c_SU/0.jpg">
+                                <span class="no_margin">Video 01 - HTML Introduction</span>
+                              </div>
+
+                              <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/cZCq8lQ-vZ0'">
+                                <img id="img-responsive" src="http://img.youtube.com/vi/cZCq8lQ-vZ0/0.jpg">
+                                <span class="no_margin">Video 02 - What is HTML</span>
+                              </div>
+
+                              <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/IJWcX2EDAKg'">
+                               <img id="img-responsive" src="http://img.youtube.com/vi/IJWcX2EDAKg/0.jpg">
+                                <span class="no_margin">Video 03 - HTML Syntax & Structure</span>
+                              </div>
+
+                              <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/MnaKa7igX7k'">
+                                <img id="img-responsive" src="http://img.youtube.com/vi/MnaKa7igX7k/0.jpg">
+                                <span class="no_margin">Video 04 - Your First Web Page</span>
+                              </div>
+                          </div>
+
+                          <div class="box">
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/mNRzWMH5xK0'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/mNRzWMH5xK0/0.jpg">
+                              <span class="no_margin">Video 05 - Head and Body Tag</span>
+                            </div>
+
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XxZPrn1VFTc'">
+                             <img id="img-responsive" src="http://img.youtube.com/vi/XxZPrn1VFTc/0.jpg">
+                              <span class="no_margin">Video 06 - Headings and Text</span>
+                            </div>
+
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/UWdepvkLE8U'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/UWdepvkLE8U/0.jpg">
+                              <span class="no_margin">Video 07 - Heading Structure</span>
+                            </div>
+
+                            <div class="vid-item" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/OwC4xNWihoM'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/OwC4xNWihoM/0.jpg">
+                              <span class="no_margin">Video 08 - Default Browser Styles</span>
+                            </div>
+                          </div>
+
+                          <div class="box">
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/g6xsNHnAmlE'">
+                             <img id="img-responsive" src="http://img.youtube.com/vi/g6xsNHnAmlE/0.jpg">
+                              <span class="no_margin">Video 09 - The img Tag</span>
+                            </div>
+
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/f8pAb3IuECk'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/f8pAb3IuECk/0.jpg">
+                              <span class="no_margin">Video 10 - HTML Links</span>
+                            </div>
+
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/HeQvQEiGMKk'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/HeQvQEiGMKk/0.jpg">
+                              <span class="no_margin">Video 11 - HTML Lists</span>
+                            </div>
+
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xkF-cKpzREU'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/xkF-cKpzREU/0.jpg">
+                              <span class="no_margin">Video 12 - HR and BR Tags</span>
+                            </div>
+
+                          </div>
+
+                          <div class="box">
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/XQlr727A8w'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/XQlr727A8w/0.jpg">
+                              <span class="no_margin">Video 13 - The div Tag</span>
+                            </div>
+
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/9UNmumTYuq8'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/9UNmumTYuq8/0.jpg">
+                              <span class="no_margin">Video 14 - ID's and Classes</span>
+                            </div>
+
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Tc4IsPFB01E'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/Tc4IsPFB01E/0.jpg">
+                              <span class="no_margin">Video 15 - Adding CSS to HTML</span>
+                            </div>
+
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/Gd0RBdFRvF0'">
+                              <img id="img-responsive" src="http://img.youtube.com/vi/Gd0RBdFRvF0/0.jpg">
+                              <span class="no_margin">Video 16 - Adding JavaScript to HTML</span>
+                            </div>
+
+                          </div>
+
+                          <div class="box">
+                            <div onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/xuA8kt2xnv8'">
+                           <img id="img-responsive" src="http://img.youtube.com/vi/xuA8kt2xnv8/0.jpg">
+                            <span class="no_margin">Video 17 - What To Do Next</span>
+                        </div>
+                  </div>
+                </div>
+
+                  </div>
+                  <span  class="nav previous" onclick="fPrevious()">Prev</span>
+                  <span  class="nav next" onclick="fNext()">Next</span>
           </div>
         </div>
       </div>
@@ -110,6 +228,7 @@
 		</footer>
 
     <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/slideshow/slideshow.js"></script>
 
   <!-- ===== nav script end ===== -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.jsscript"></script>
